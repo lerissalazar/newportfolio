@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&display=swap');
+/* font-family: 'Baskervville', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text&display=swap');
+/* font-family: 'Bellota Text', cursive; */
+
+.projetBtn {
+    text-decoration: underline 1px solid black;
+    font-family: 'Bellota Text', cursive;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+.projectRow {
+    margin-top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 150px;
+    margin-left: 334px;
+}
+
+.learnBtn {
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+}
+
+.projectTitle {
+    font-family: 'Baskervville', serif;
+    font-size: 40px;
+}
+
+.projectInfo {
+    font-size: 20px;
+    font-family: 'Bellota Text', cursive;
+}
+
+.learnBtn {
+    font-size: 15px;
+    text-decoration: underline 1px solid black;
+    font-family: 'Bellota Text', cursive;
+}
+
+.projectDiv {
+    margin-top: 55px;
+}

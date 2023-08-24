@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&display=swap');
+/* font-family: 'Baskervville', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text&display=swap');
+/* font-family: 'Bellota Text', cursive; */
+
+.sideNavLink {
+    list-style-type: none;
+    font-family: 'Bellota Text', cursive;
+}
+
+.welcomeTxt {
+    font-size: 40px;
+    font-family: 'Baskervville', serif;
+    margin-bottom: 26px;
+}
+
+.sideLink {
+    text-decoration: underline 1px solid black;
+    color: black;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+}
+
+.sideNavDiv {
+    margin-bottom: 20px !important;
+}
+
+.headshot {
+    width: 300px;
+    height: 300px;
+}
+
+.divRow {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin-top: 215px;
+}
+
+@media screen and (max-width: 430px) {
+    .divRow {
+        margin-top: 0px !important;
+        gap: 50px;
+    }
+
+    .welcomeTxt {
+        text-align: center;
+    }
+
+    .sideNavDiv {
+        text-align: center;
+    }
+
+    .headshot {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .divRow {
+        gap: 2px;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .divRow {
+        margin-top: 360px;
+    }
+}
