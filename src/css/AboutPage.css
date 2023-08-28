@@ -1,26 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Baskervville&display=swap');
-/* font-family: 'Baskervville', serif; */
-@import url('https://fonts.googleapis.com/css2?family=Bellota+Text&display=swap');
-/* font-family: 'Bellota Text', cursive; */
-
 .aboutContainer {
-    margin-top: 180px;
+    margin-top: 65px;
+}
+
+.headshot2 {
+    width: 250px;
+    height: 250px;
+    margin-top: 150px;
+}
+
+@keyframes rotate{
+    from{ transform: rotate(-360deg); }
+    to{ transform: rotate(360deg); }
 }
 
 .helloTxt {
-    font-family: 'Baskervville', serif;
+    font-family: 'DM Serif Display', serif;
     font-size: 40px;
 }
 
 .helloInfo {
     font-family: 'Bellota Text', cursive;
     font-size: 20px;
-    max-width: 490px;
+    max-width: 560px;
 }
 
 .contactTxt {
-    font-family: 'Baskervville', serif;
+    font-family: 'DM Serif Display', serif;
     font-size: 40px;
+}
+
+.contactLine {
+    display: flex;
+    flex-direction: column;
 }
 
 .aboutRow {
@@ -34,6 +45,14 @@
     font-family: 'Bellota Text', cursive;
     font-size: 20px;
     max-width: 276px;
+    color: black;
+    text-decoration: underline 2px solid #CC0063;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.contactItem:hover {
+    box-shadow: inset 265px 0 0 0 #f0cde1;
+    color: black;
 }
 
 .linkedItem {
@@ -41,7 +60,13 @@
     font-size: 20px;
     max-width: 276px;
     color: black;
-    text-decoration: underline 1px solid black;
+    text-decoration: underline 2px solid #CC0063;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.linkedItem:hover {
+    box-shadow: inset 115px 0 0 0 #f0cde1;
+    color: black;
 }
 
 .emailIcon {
@@ -49,18 +74,27 @@
 }
 
 .gitItem {
-    color: black;
+    color: black !important;
     font-family: 'Bellota Text', cursive;
     font-size: 20px;
-    text-decoration: underline 1px solid black;
+    text-decoration: underline 2px solid #CC0063;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
-.git {
-    margin-top: 15px;
+.gitItem:hover {
+    box-shadow: inset 100px 0 0 0 #f0cde1;
+    color: black;
 }
 
 .gitIcon {
     padding-bottom: 5px;
+    color: black !important;
+}
+
+.diffColor {
+    color: black;
+    text-decoration: underline solid 2px #CC0063;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
 .linkedIcon {
@@ -78,5 +112,13 @@
     border: none;
     font-size: 20px;
     background-color: transparent;
-    text-decoration: underline 1px solid black;
+    text-decoration: underline 2px solid #CC0063;
 }
+
+.box {
+    background-color: #E3D5CA;
+    width: 100px;
+    height: 100px;
+}
+
+

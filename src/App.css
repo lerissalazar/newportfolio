@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text&display=swap');
+/* font-family: 'Bellota Text', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text&family=DM+Serif+Display&display=swap');
+/* font-family: 'DM Serif Display', serif; */
+
 body {
   background-color: #EDEDE9 !important;
 }
@@ -7,7 +12,8 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .navBtn {
@@ -15,6 +21,10 @@ body {
   border: none;
   font-size: 20px;
   background-color: transparent;
+}
+
+.navBtn:hover {
+  text-decoration: underline 2px solid #CC0063;
 }
 
 .gitBtn {
@@ -27,19 +37,3 @@ body {
   font-size: 20px;
 }
 
-.line {
-  margin-left: 12px;
-  line-height: 1.2;
-  display: block;
-  position: relative;
-}
-
-.line::before {
-  content: " ";
-  width: 0.5px;
-  background: black;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: -10px;
-}

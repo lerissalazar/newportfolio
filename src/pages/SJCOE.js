@@ -12,11 +12,11 @@ export default function SJCOE() {
     const [goToBack, setToBack] = React.useState(false);
 
     if (goToHome) {
-        return <Navigate to='/homePage' />
+        return <Navigate to='/' />
     }
 
     if (goToAbout) {
-        return <Navigate to='/aboutPage' />
+        return <Navigate to='/about' />
     }
 
     if (goToProjects) {
@@ -50,21 +50,18 @@ export default function SJCOE() {
             <button onClick={() => {
                 setToBack(true);
             }}
-             className='backBtn'><Icon className='arrow' icon="ph:arrow-left-light" width="22" />Back To Projects</button>
+                className='backBtn'><Icon className='arrow' icon="ph:arrow-left-light" width="22" />Back To Projects</button>
             <div class='row' className='SJCOERow'>
                 <div className='SJCOEImg'>
                     <img src={SJCOEPic} />
                 </div>
                 <div>
-                    <span className='line'>
-                        <p className='projectTitle'>Remember When</p>
-                        <p className='projectInfo'>UI/UX PROJECT &  WEB APP</p>
-                        <p className='SJCOEInfo'>SJCOE Admin serves as a Content Management System (CMS) website tailored for administrative users, granting them the capability to seamlessly edit their site as required. I was assigned the responsibility of designing the foundational pages and layout for this website. Using Figma, I crafted the initial design, which was handed off to the system specialist, Ernestina Rodriguez, for the purpose of rectifying any issues</p>
-                        <button className='figmaBtn'>
-                            <a href='https://www.figma.com/file/IyEMWlNXsu9srmpMU50GXx/SJCOE-Admin?type=design&node-id=0-1&mode=design&t=XIacO1Wc56fcwiIo-0' className='figmaBtnTxt'>Figma</a>
-                        </button>
-
-                    </span>
+                    <p className='projectTitle'>SJCOE Admin</p>
+                    <p className='projectInfo'>UI/UX PROJECT &  WEB APP</p>
+                    <p className='SJCOEInfo'>SJCOE Admin serves as a Content Management System (CMS) website tailored for administrative users, granting them the capability to seamlessly edit their site as required. I was assigned the responsibility of designing the foundational pages and layout for this website. Using Figma, I crafted the initial design, which was handed off to the system specialist, Ernestina Rodriguez, for the purpose of rectifying any issues</p>
+                    <button className='figmaBtn'>
+                        <a href='https://www.figma.com/file/IyEMWlNXsu9srmpMU50GXx/SJCOE-Admin?type=design&node-id=0-1&mode=design&t=XIacO1Wc56fcwiIo-0' className='figmaBtnTxt'>Figma</a>
+                    </button>
                 </div>
             </div>
         </div>

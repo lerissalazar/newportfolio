@@ -2,6 +2,8 @@ import '../css/AboutPage.css'
 import React from 'react'
 import { Icon } from '@iconify/react';
 import { Navigate } from 'react-router-dom';
+import Headshot2 from '../Assets/AC3549C2-4C94-4AE3-BFC0-23BA21D134E1.png'
+import { Color } from 'three';
 
 export default function AboutPage() {
     const [goToHome, setToHome] = React.useState(false);
@@ -10,7 +12,7 @@ export default function AboutPage() {
     const [goToSkill, setToSkill] = React.useState(false);
 
     if (goToHome) {
-        return <Navigate to='/homePage' />
+        return <Navigate to='/' />
     }
 
     if (goToAbout) {
@@ -45,21 +47,18 @@ export default function AboutPage() {
                 <div class='row' className='aboutRow'>
                     <div>
                         <p className='helloTxt'>Hello, my name is Lerissa Lazar</p>
-                        <span className='line'>
-                            <p className='helloInfo'>I specialize in Front End Web Development & UI/UX Design.
-                                With 1 year of valuable experience, I am constantly seeking new opportunities to expand my expertise in development & design.
-                                Beyond my technical skills, I also run two small businesses. I make custom cakes that bring joy to celebrations & I create unique and stylish custom shoes that make a statement. These businesses not only allow me to showcase my creativity but also enable me to connect with people on a personal level.</p>
+                        <p className='helloInfo'>I specialize in <span className='diffColor'>Frontend Web Development</span>  & <span className='diffColor'>UI/UX Design.</span>  <br />
+                            With <span className='diffColor'>1 year</span> of <span className='diffColor'>valuable experience,</span> I am constantly seeking new opportunities to expand my expertise in development & design. <br />
+                            Beyond my technical skills, I also run two small businesses. I make <span className='diffColor'>custom cakes</span>  that bring joy to celebrations & I create <span className='diffColor'>unique and stylish custom shoes</span>  that make a statement. These businesses not only allow me to showcase my creativity but also enable me to connect with people on a personal level.</p>
+                        <p className='contactTxt'>Contact</p>
+                        <span className='contactLine'>
+                            <a href='mailto:lerissalazarjob@gmail.com' className='contactItem'><Icon className='emailIcon' icon="mdi-light:email" width="35" height="35" />lerissalazarjob@gmail.com</a>
+                            <a href='https://www.linkedin.com/in/lerissalazar12/' className='linkedItem'><Icon className='linkedIcon' icon="ph:linkedin-logo-thin" width="35" height="35" />LinkedIn</a>
+                            <a href='https://github.com/lerissalazar' className='gitItem'><Icon className='gitIcon' icon="ph:github-logo-thin" width="35" height="35" />Github</a>
                         </span>
                     </div>
                     <div>
-                        <p className='contactTxt'>Contact</p>
-                        <span className='line'>
-                            <p className='contactItem'><Icon className='emailIcon' icon="mdi-light:email" width="35" height="35" />lerissalazarjob@gmail.com</p>
-                            <a href='https://www.linkedin.com/in/lerissalazar12/' className='linkedItem'><Icon className='linkedIcon' icon="ph:linkedin-logo-thin" width="35" height="35" />LinkedIn</a>
-                            <div className='git'>
-                                <a href='https://github.com/lerissalazar' className='gitItem'><Icon className='gitIcon' icon="ph:github-logo-thin" width="35" height="35" />Github</a>
-                            </div>
-                        </span>
+                        <img className='headshot2' src={Headshot2} />
                     </div>
                 </div>
             </div>

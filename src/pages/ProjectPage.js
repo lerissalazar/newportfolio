@@ -12,9 +12,12 @@ export default function ProjectPage() {
     const [goToProjects, setToProjects] = React.useState(false);
     const [goToSkill, setToSkill] = React.useState(false);
     const [goToSJCOE, setToSJCOE] = React.useState(false);
+    const [goToRemember, setToRemember] = React.useState(false);
+    const [goToCake, setToCake] = React.useState(false);
+    const [goToCode, setToCode] = React.useState(false);
 
     if (goToHome) {
-        return <Navigate to='/homePage' />
+        return <Navigate to='/' />
     }
 
     if (goToAbout) {
@@ -31,6 +34,18 @@ export default function ProjectPage() {
 
     if (goToSJCOE) {
         return <Navigate to='/SJCOEPage' />
+    }
+
+    if (goToRemember) {
+        return <Navigate to='/RememberPage' />
+    }
+
+    if (goToCake) {
+        return <Navigate to='/CakePage' />
+    }
+
+    if (goToCode) {
+        return <Navigate to='/CodePage' />
     }
 
     return (
@@ -55,50 +70,49 @@ export default function ProjectPage() {
                         <img src={SJCOE} />
                     </div>
                     <div className='projectDiv'>
-                        <span className='line'>
-                            <p className='projectTitle'>SJCOE Admin</p>
-                            <p className='projectInfo'>UI/UX PROJECT & WEBSITE</p>
-                            <button onClick={() => {
-                                setToSJCOE(true);
-                            }} className='learnBtn'>Learn more</button>
-                        </span>
+                        <p className='projectTitle'>SJCOE Admin</p>
+                        <p className='projectInfo'>UI/UX PROJECT & WEBSITE</p>
+                        <button onClick={() => {
+                            setToSJCOE(true);
+                        }} className='learnBtn'>Learn more</button>
                     </div>
                 </div>
-            </div>
-            <div class='row' className='projectRow'>
-                <div>
-                    <img src={Remember} />
-                </div>
-                <div className='projectDiv'>
-                    <span className='line'>
+                <div class='row' className='projectRow'>
+                    <div>
+                        <img src={Remember} />
+                    </div>
+                    <div className='projectDiv'>
                         <p className='projectTitle'>Remember When</p>
                         <p className='projectInfo'>UI/UX PROJECT &  WEB APP</p>
-                        <button className='learnBtn'>Learn more</button>
-                    </span>
+                        <button onClick={() => {
+                            setToRemember(true);
+                        }} className='learnBtn'>Learn more</button>
+                    </div>
                 </div>
-            </div>
-            <div class='row' className='projectRow'>
-                <div>
-                    <img src={Cake} />
-                </div>
-                <div className='projectDiv'>
-                    <span className='line'>
+                <div class='row' className='projectRow'>
+                    <div>
+                        <img src={Cake} />
+                    </div>
+                    <div className='projectDiv'>
                         <p className='projectTitle'>Cake Business</p>
                         <p className='projectInfo'>UI/UX PROJECT & WEBSITE</p>
-                        <button className='learnBtn'>Learn more</button>
-                    </span>
+                        <button onClick={() => {
+                            setToCake(true);
+                        }} className='learnBtn'>Learn more</button>
+                    </div>
                 </div>
-            </div>
-            <div class='row' className='projectRow'>
-                <div>
-                    <img src={Code} />
-                </div>
-                <div className='projectDiv'>
-                    <span className='line'>
+                <div class='row' className='codeProjectRow'>
+                    <div>
+                        <img src={Code} />
+                    </div>
+                    <div className='projectDiv'>
                         <p className='projectTitle'>Codewars</p>
                         <p className='projectInfo'>UI/UX PROJECT</p>
-                        <button className='learnBtn'>Learn more</button>
-                    </span>
+                        <button onClick={() => {
+                            setToCode(true);
+                        }} className='learnBtn'>Learn more</button>
+
+                    </div>
                 </div>
             </div>
         </div>

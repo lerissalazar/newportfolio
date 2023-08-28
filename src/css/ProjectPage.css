@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Baskervville&display=swap');
-/* font-family: 'Baskervville', serif; */
-@import url('https://fonts.googleapis.com/css2?family=Bellota+Text&display=swap');
-/* font-family: 'Bellota Text', cursive; */
+/* .projectContainer {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 600px;
+} */
 
 .projetBtn {
-    text-decoration: underline 1px solid black;
+    text-decoration: underline 2px solid #CC0063;
     font-family: 'Bellota Text', cursive;
     border: none;
     font-size: 20px;
@@ -19,14 +20,24 @@
     margin-left: 334px;
 }
 
+.projectContainer::-webkit-scrollbar {
+    display: none;
+}
+
 .learnBtn {
     border: 0;
     background-color: transparent;
     padding: 0;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.learnBtn:hover {
+    box-shadow: inset 100px 0 0 0 #f0cde1;
+    color: black;
 }
 
 .projectTitle {
-    font-family: 'Baskervville', serif;
+    font-family: 'DM Serif Display', serif;
     font-size: 40px;
 }
 
@@ -37,10 +48,19 @@
 
 .learnBtn {
     font-size: 15px;
-    text-decoration: underline 1px solid black;
+    text-decoration: underline 2px solid #CC0063;
     font-family: 'Bellota Text', cursive;
 }
 
 .projectDiv {
     margin-top: 55px;
+}
+
+.codeProjectRow {
+    margin-top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 150px;
+    margin-left: 334px;
+    margin-bottom: 100px;
 }
