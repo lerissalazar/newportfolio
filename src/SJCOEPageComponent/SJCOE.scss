@@ -1,0 +1,92 @@
+// MAIN THINGS
+
+.SJCOERow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 150px;
+    display: flex;
+    justify-content: center;
+    margin-top: 130px;
+}
+
+.backBtn {
+    border: 0;
+    background-color: transparent;
+    text-decoration: underline 2px solid #CC0063;
+    font-family: 'Bellota Text', cursive;
+    font-size: 20px;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.backBtn:hover {
+    box-shadow: inset 265px 0 0 0 #f0cde1;
+    color: black;
+}
+
+.arrow {
+    margin-bottom: 5px;
+}
+
+.backBtnDiv {
+    margin-left: 20px;
+}
+
+//
+
+// SJCOE NAV BAR 
+
+.SJCOENavBtn {
+    font-family: 'Bellota Text', cursive;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+.SJCOENavBtn:hover {
+    text-decoration: underline 2px solid #CC0063;
+}
+
+.sjcoeNav {
+    font-family: 'Bellota Text', cursive;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+    text-decoration: underline 2px solid #CC0063;
+}
+
+//
+
+// SJCOE GROUP
+
+.SJCOEInfo {
+    max-width: 378px;
+    font-size: 15px;
+    font-family: 'Bellota Text', cursive;
+}
+
+.SJCOEImgDiv {
+    margin-top: 50px;
+}
+
+.SJCOEImg {
+    width: 400px !important;
+    height: 300px !important;
+}
+
+//
+
+// SJCOE FIGMA 
+
+.figmaBtnTxt {
+    font-size: 20px;
+    color: black;
+    font-family: 'Bellota Text', cursive;
+    text-decoration: underline solid 2px #CC0063;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.figmaBtnTxt:hover {
+    box-shadow: inset 100px 0 0 0 #f0cde1;
+}
+
+//

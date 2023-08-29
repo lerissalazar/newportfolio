@@ -1,16 +1,31 @@
+// PROJECT NAV BAR
+
+.projectsNavBtn {
+    font-family: 'Bellota Text', cursive;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+.projectsNavBtn:hover {
+    text-decoration: underline 2px solid #CC0063;
+}
+
+.projectNav {
+    font-family: 'Bellota Text', cursive;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+    text-decoration: underline 2px solid #CC0063;
+}
+
+//
+
 .projectContainer {
     overflow-y: scroll;
     overflow-x: hidden;
     height: 455px;
     scroll-behavior: smooth;
-}
-
-.projetBtn {
-    text-decoration: underline 2px solid #CC0063;
-    font-family: 'Bellota Text', cursive;
-    border: none;
-    font-size: 20px;
-    background-color: transparent;
 }
 
 .emoji {
@@ -82,6 +97,7 @@
     margin-left: 334px;
     margin-bottom: 100px;
 }
+
 
 @media screen and (max-width: 768px) { 
 
@@ -164,6 +180,11 @@
 }
 
 @media screen and (max-width: 380px) { 
+
+    .projectContainer {
+        height: 350px;
+    }
+
     .SCJOEprojectRow {
         margin-left: 0 !important;
         display: flex;

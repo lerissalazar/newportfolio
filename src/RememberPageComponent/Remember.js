@@ -1,4 +1,4 @@
-import '../css/Remember.css'
+import '../RememberPageComponent/Remember.scss'
 import React from 'react'
 import RememberWhen from '../Assets/Remember Laptop.png'
 import { Icon } from '@iconify/react';
@@ -38,16 +38,16 @@ export default function Remember() {
                 <div class='row' className='navRow'>
                     <button onClick={() => {
                         setToHome(true);
-                    }} className='navBtn'>Home</button>
+                    }} className='rememberNavBtn'>Home</button>
                     <button onClick={() => {
                         setToAbout(true);
-                    }} className='navBtn'>About</button>
+                    }} className='rememberNavBtn'>About</button>
                     <button onClick={() => {
                         setToProjects(true);
-                    }} className='projetBtn'>Project</button>
+                    }} className='rememberNav'>Project</button>
                     <button onClick={() => {
                         setToSkill(true);
-                    }} className='navBtn'>Skills</button>
+                    }} className='rememberNavBtn'>Skills</button>
                 </div>
             </div >
             <div className='backBtnDiv'>

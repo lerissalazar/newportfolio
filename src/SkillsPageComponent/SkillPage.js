@@ -1,4 +1,4 @@
-import '../css/SkillPage.css'
+import '../SkillsPageComponent/Skill.scss'
 import React from 'react'
 import Smart from '../Assets/F2035401-0E3E-476B-B397-D04F269F9B5F.png'
 import { Navigate } from 'react-router-dom';
@@ -32,19 +32,14 @@ export default function SkillPage() {
       <div class='row' className='navRow'>
         <button onClick={() => {
           setToHome(true);
-        }} className='navBtn'>Home</button>
+        }} className='skillNavBtn'>Home</button>
         <button onClick={() => {
           setToAbout(true);
-        }} className='navBtn'>About</button>
+        }} className='skillNavBtn'>About</button>
         <button onClick={() => {
           setToProjects(true);
-        }} className='navBtn'>Project</button>
-        <button onClick={() => {
-          setToSkill(true);
-        }} className='skillBtn'>Skills</button>
-      </div>
-      <div className='smartIconDiv'>
-        <img className='smartIcon' src={Smart}/>
+        }} className='skillNavBtn'>Project</button>
+        <button className='skillBtn'>Skills</button>
       </div>
       <div className='skillRow'>
         <div className='skillCol1'>
@@ -86,29 +81,32 @@ export default function SkillPage() {
           <p className='langDiv'>Frameworks</p>
           <div className='skillFlex'>
             <div>
-              <span class="icon icon-1">
+              <span class="icon icon-5">
                 <Icon icon="bxl:react" width="60" />
               </span>
               <p className='skillTxt'>REACT</p>
             </div>
             <div>
-              <span class="icon icon-2">
+              <span class="icon icon-3">
                 <Icon icon="tabler:brand-bootstrap" width="60" />
               </span>
               <p className='skillTxt'>BOOTSTRAP</p>
             </div>
             <div>
-              <span class="icon icon-3">
+              <span class="icon icon-2">
                 <Icon icon="simple-icons:dotnet" width="60" />
               </span>
               <p className='skillTxt'>DOTNET</p>
             </div>
             <div>
-              <span class="icon icon-4">
+              <span class="icon icon-1">
                 <Icon icon="ph:angular-logo" width="60" />
               </span>
               <p className='skillTxt'>ANGULAR </p>
             </div>
+          </div>
+          <div className='smartIconDiv'>
+            <img className='smartIcon' src={Smart} />
           </div>
         </div>
       </div>

@@ -1,41 +1,68 @@
-.sideNavLink {
-    list-style-type: none;
-    font-family: 'Bellota Text', cursive;
+// MAIN THINGS
+
+.starterDivRow {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin-top: 215px;
 }
 
-.welcomeTxt {
-    font-size: 45px;
-    font-weight: 500;
-    font-family: 'DM Serif Display', serif;
-    margin-bottom: 26px;
-}
+//
 
-.sideLink {
+// STARTER NAV LINK
+.aboutSideLink {
     color: black;
     font-size: 20px;
     border: none;
     background-color: transparent;
 }
 
-.sideLink:hover {
-    text-decoration: underline 2px solid #CC0063;
+.aboutSideLink:hover {
+    text-decoration: underline 2px solid #CC0063 !important;
+}
+
+.projectSideLink {
+    color: black;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+}
+
+.projectSideLink:hover {
+    text-decoration: underline 2px solid #CC0063 !important;
+}
+
+.skillSideLink {
+    color: black;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+}
+
+.skillSideLink:hover {
+    text-decoration: underline 2px solid #CC0063 !important;
+}
+
+
+.sideNavLink {
+    list-style-type: none;
+    font-family: 'Bellota Text', cursive;
 }
 
 .sideNavDiv {
     margin-bottom: 20px !important;
 }
 
-.headshot {
-    width: 250px;
-    height: 250px;
-}
+//
 
-.divRow {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 100px;
-    margin-top: 215px;
+// WELCOME TEXT
+
+.welcomeTxt {
+    font-size: 45px;
+    font-weight: 500;
+    font-family: 'DM Serif Display', serif;
+    margin-bottom: 26px;
 }
 
 .title-word {
@@ -70,25 +97,46 @@
     0% {
         color: var(--color-1)
     }
+
     32% {
         color: var(--color-1)
     }
+
     33% {
         color: var(--color-2)
     }
+
     65% {
         color: var(--color-2)
     }
+
     66% {
         color: var(--color-3)
     }
+
     99% {
         color: var(--color-3)
     }
+
     100% {
         color: var(--color-1)
     }
 }
+
+//
+
+// STARTER EMOJI
+
+.starterEmoji {
+    width: 250px;
+    height: 250px;
+}
+
+//
+
+//RESPONSIVENESS
+
+// MOBILE 430px
 
 @media screen and (max-width: 430px) {
     .divRow {
@@ -110,14 +158,26 @@
     }
 }
 
+//
+
+// TABLET 768PX
+
 @media screen and (max-width: 768px) {
     .divRow {
         gap: 2px;
     }
 }
 
+//
+
+// LAPTOP 2560PX
+
 @media screen and (min-width: 2560px) {
     .divRow {
         margin-top: 360px;
     }
 }
+
+//
+
+//

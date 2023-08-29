@@ -1,0 +1,189 @@
+// MAIN THINGS
+
+//
+
+// SKILL NAVBAR
+
+    .skillNavBtn {
+        font-family: 'Bellota Text', cursive;
+        border: none;
+        font-size: 20px;
+        background-color: transparent;
+    }
+
+    .skillNavBtn:hover {
+        text-decoration: underline 2px solid #CC0063;
+    }
+
+    .skillBtn {
+        font-family: 'Bellota Text', cursive;
+        border: none;
+        font-size: 20px;
+        background-color: transparent;
+        text-decoration: underline 2px solid #CC0063;
+    }
+
+//
+
+// SKILL EMOJI
+
+.smartIcon {
+    width: 200px;
+    height: 200px;
+}
+
+.smartIconDiv {
+    display: flex;
+    justify-content: center;
+}
+
+//
+
+// SKILLS 
+
+.skillFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    gap: 100px;
+}
+
+.langDiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    font-family: 'DM Serif Display', serif;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.skillTxt {
+    font-family: 'Bellota Text', cursive;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+//
+
+// SKILL ICONS
+
+// .icon {
+//     animation: color-animation 3s linear infinite;
+// }
+
+.icon-1 {
+    // --color-1: #cc0063;
+    color: #cc0063;
+    // --color-2: #ff679b;
+    // --color-3: #910048;
+}
+
+.icon-2 {
+    // --color-1: #ff4c6b;
+    color: #ff4c6b;
+    // --color-2: #6c1d45;
+    // --color-3: #ff5cab;
+}
+
+.icon-3 {
+    // --color-1: #6c1d45;
+    color: #6c1d45;
+    // --color-2: #910048;
+    // --color-3: #cc0063;
+}
+
+.icon-4 {
+    // --color-1: #ff679b;
+    // --color-2: #910048;
+    color: #910048;
+    // --color-3: #cc0063;
+}
+
+.icon-5 {
+    // --color-1: #6c1d45;
+    // --color-2: #ff679b;
+    color: #ff679b;
+    // --color-3: #ff4c6b;
+}
+
+@keyframes color-animation {
+    0% {
+        color: var(--color-1)
+    }
+
+    32% {
+        color: var(--color-1)
+    }
+
+    33% {
+        color: var(--color-2)
+    }
+
+    65% {
+        color: var(--color-2)
+    }
+
+    66% {
+        color: var(--color-3)
+    }
+
+    99% {
+        color: var(--color-3)
+    }
+
+    100% {
+        color: var(--color-1)
+    }
+}
+
+//
+
+// RESPONSIVENESS
+
+// MOBILE 430PX
+
+@media screen and (max-width: 430px) {
+    .skillFlex {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+//
+
+// MOBILE 325PX
+
+@media screen and (max-width: 325px) {
+    .projectTitle {
+        font-size: 12px;
+    }
+
+    .projectInfo {
+        font-size: 10px;
+        margin-bottom: -10px !important;
+    }
+
+    .learnBtn {
+        font-size: 10px;
+    }
+
+    .mobileImg {
+        width: 150px;
+        margin-left: 20px;
+    }
+
+    .emoji {
+        width: 150px;
+        height: 150px;
+    }
+
+    .projectDiv {
+        margin-top: 15px !important;
+    }
+}
+
+//
+
+//

@@ -1,4 +1,4 @@
-import '../css/AboutPage.css'
+import '../AboutPageComponent/About.scss'
 import React from 'react'
 import { Icon } from '@iconify/react';
 import { Navigate } from 'react-router-dom';
@@ -31,24 +31,22 @@ export default function AboutPage() {
             <div class='row' className='navRow'>
                 <button onClick={() => {
                     setToHome(true);
-                }} className='navBtn'>Home</button>
-                <button onClick={() => {
-                    setToAbout(true);
-                }} className='abtBtn'>About</button>
+                }} className='aboutNavBtn'>Home</button>
+                <button className='aboutNav'>About</button>
                 <button onClick={() => {
                     setToProjects(true);
-                }} className='navBtn'>Project</button>
+                }} className='aboutNavBtn'>Project</button>
                 <button onClick={() => {
                     setToSkill(true);
-                }} className='navBtn'>Skills</button>
+                }} className='aboutNavBtn'>Skills</button>
             </div>
             <div class='container fluid' className='aboutContainer'>
                 <div class='row' className='aboutRow'>
                     <div>
                         <p className='helloTxt'>Hello, my name is Lerissa Lazar</p>
-                        <p className='helloInfo'>I specialize in <span className='diffColor'>Frontend Web Development</span>  & <span className='diffColor'>UI/UX Design.</span>  <br />
-                            With <span className='diffColor'>1 year</span> of <span className='diffColor'>valuable experience,</span> I am constantly seeking new opportunities to expand my expertise in development & design. <br />
-                            Beyond my technical skills, I also run two small businesses. I make <span className='diffColor'>custom cakes</span>  that bring joy to celebrations & I create <span className='diffColor'>unique and stylish custom shoes</span>  that make a statement. These businesses not only allow me to showcase my creativity but also enable me to connect with people on a personal level.</p>
+                        <p className='helloInfo'>I specialize in Frontend Web Development UI/UX Design.<br />
+                            I am constantly seeking new opportunities to expand my expertise in development & design. <br />
+                            Beyond my technical skills, I also run two small businesses. I make custom cakes that bring joy to celebrations & I create unique and stylish custom shoes that make a statement. These businesses not only allow me to showcase my creativity but also enable me to connect with people on a personal level.</p>
                         <p className='contactTxt'>Contact</p>
                         <span className='contactLine'>
                             <div className='mobileIcon'>
@@ -66,7 +64,7 @@ export default function AboutPage() {
                         </span>
                     </div>
                     <div>
-                        <img className='headshot2' src={Headshot2} />
+                        <img className='aboutEmoji' src={Headshot2} />
                     </div>
                 </div>
             </div>

@@ -1,4 +1,4 @@
-import '../css/ProjectPage.css'
+import '../ProjectsPageComponent/Project.scss'
 import React from 'react'
 import SJCOE from '../Assets/SJCOE Laptop.png'
 import Remember from '../Assets/Remember Laptop.png'
@@ -60,16 +60,14 @@ export default function ProjectPage() {
             <div class='row' className='navRow'>
                 <button onClick={() => {
                     setToHome(true);
-                }} className='navBtn'>Home</button>
+                }} className='projectsNavBtn'>Home</button>
                 <button onClick={() => {
                     setToAbout(true);
-                }} className='navBtn'>About</button>
-                <button onClick={() => {
-                    setToProjects(true);
-                }} className='projetBtn'>Project</button>
+                }} className='projectsNavBtn'>About</button>
+                <button className='projectNav'>Project</button>
                 <button onClick={() => {
                     setToSkill(true);
-                }} className='navBtn'>Skills</button>
+                }} className='projectsNavBtn'>Skills</button>
             </div>
             <div className='emojiDiv'>
                 <img className='emoji' src={Emoji} />
@@ -130,7 +128,7 @@ export default function ProjectPage() {
                     </div>
                     <div className='projectDiv'>
                         <p className='projectTitle'>Portfolio</p>
-                        <p className='projectInfo'>UI/UX PROJECT & CURRENT WEBSITE</p>
+                        <p className='projectInfo'>UI/UX PROJECT & WEBSITE</p>
                         <button onClick={() => {
                             setToPort(true);
                         }} className='learnBtn'>Learn more</button>

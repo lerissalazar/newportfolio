@@ -1,17 +1,45 @@
+// MAIN THINGS
+
 .aboutContainer {
     margin-top: 65px;
 }
 
-.headshot2 {
+//
+
+// ABOUT NAV BAR
+
+.aboutNavBtn {
+    font-family: 'Bellota Text', cursive;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+.aboutNavBtn:hover {
+    text-decoration: underline 2px solid #CC0063;
+}
+
+.aboutNav {
+    font-family: 'Bellota Text', cursive;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+    text-decoration: underline 2px solid #CC0063;
+}
+
+//
+
+// EMOJI 
+
+.aboutEmoji {
     width: 250px;
     height: 250px;
     margin-top: 150px;
 }
 
-@keyframes rotate{
-    from{ transform: rotate(-360deg); }
-    to{ transform: rotate(360deg); }
-}
+//
+
+// ABOUT PARAGRAPH 
 
 .helloTxt {
     font-family: 'DM Serif Display', serif;
@@ -24,6 +52,18 @@
     max-width: 560px;
 }
 
+.aboutRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 200px;
+    justify-content: center;
+}
+
+
+//
+
+// CONTACT PARAGRAPH 
+
 .contactTxt {
     font-family: 'DM Serif Display', serif;
     font-size: 40px;
@@ -32,13 +72,6 @@
 .contactLine {
     display: flex;
     flex-direction: column;
-}
-
-.aboutRow {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 200px;
-    justify-content: center;
 }
 
 .contactItem {
@@ -91,29 +124,13 @@
     color: black !important;
 }
 
-.diffColor {
-    color: black;
-    text-decoration: underline solid 2px #CC0063;
-    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-}
-
 .linkedIcon {
     padding-bottom: 5px;
 }
 
-.abtBtn {
-    font-family: 'Bellota Text', cursive;
-    border: none;
-    font-size: 20px;
-    background-color: transparent;
-    text-decoration: underline 2px solid #CC0063;
-}
+//
 
-.box {
-    background-color: #E3D5CA;
-    width: 100px;
-    height: 100px;
-}
+// RESPONSIVENESS
 
 @media screen and (max-width: 768px) {
     .helloTxt {
@@ -153,20 +170,21 @@
 
 @media screen and (max-width: 430px) {
     .headshot2 {
-       margin-top: 0 !important;
+        margin-top: 0 !important;
     }
 }
 
 @media screen and (max-width: 380px) {
     .helloTxt {
         font-size: 20px;
-        margin-left: 20px
+        display: flex;
+        justify-content: center;
     }
 
     .helloInfo {
         font-size: 15px;
         width: 350px;
-        margin-left: 20px
+        text-align: center;
     }
 
     .aboutRow {
@@ -180,7 +198,8 @@
 
     .contactTxt {
         font-size: 20px;
-        margin-left: 20px
+        display: flex;
+        justify-content: center;
     }
 
     .gitItem {
@@ -196,6 +215,33 @@
     }
 
     .mobileIcon {
-        margin-left: 20px;
+        display: flex;
+        justify-content: center;
     }
 }
+
+@media screen and (max-width: 325px) {
+    .helloTxt {
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .helloInfo {
+        font-size: 15px;
+        text-align: center;
+        width: 315px;
+    }
+
+    .contactTxt {
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .mobileIcon {
+        text-align: center;
+    }
+}
+
+//

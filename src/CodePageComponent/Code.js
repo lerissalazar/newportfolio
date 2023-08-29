@@ -1,10 +1,10 @@
-import '../css/SJCOE.css'
+import '../CodePageComponent/Code.scss'
 import React from 'react'
-import SJCOEPic from '../Assets/SJCOE Laptop.png'
+import CodePic from '../Assets/CodeLaptop.png'
 import { Icon } from '@iconify/react';
 import { Navigate } from 'react-router-dom';
 
-export default function SJCOE() {
+export default function Code() {
     const [goToHome, setToHome] = React.useState(false);
     const [goToAbout, setToAbout] = React.useState(false);
     const [goToProjects, setToProjects] = React.useState(false);
@@ -36,16 +36,16 @@ export default function SJCOE() {
             <div class='row' className='navRow'>
                 <button onClick={() => {
                     setToHome(true);
-                }} className='navBtn'>Home</button>
+                }} className='codeNavBtn'>Home</button>
                 <button onClick={() => {
                     setToAbout(true);
-                }} className='navBtn'>About</button>
+                }} className='codeNavBtn'>About</button>
                 <button onClick={() => {
                     setToProjects(true);
-                }} className='projetBtn'>Project</button>
+                }} className='codeNav'>Project</button>
                 <button onClick={() => {
                     setToSkill(true);
-                }} className='navBtn'>Skills</button>
+                }} className='codeNavBtn'>Skills</button>
             </div>
             <div className='backBtnDiv'>
                 <Icon className='arrow' icon="ph:arrow-left-light" width="22" />
@@ -54,16 +54,15 @@ export default function SJCOE() {
                 }}
                     className='backBtn'>Back To Projects</button>
             </div>
-
             <div class='row' className='SJCOERow'>
-                <div className='SJCOEImg'>
-                    <img src={SJCOEPic} />
+                <div className='CodeImg'>
+                    <img src={CodePic} />
                 </div>
                 <div>
-                    <p className='projectTitle'>SJCOE Admin</p>
-                    <p className='projectInfo'>UI/UX PROJECT &  WEB APP</p>
-                    <p className='SJCOEInfo'>SJCOE Admin serves as a Content Management System (CMS) website tailored for administrative users, granting them the capability to seamlessly edit their site as required. I was assigned the responsibility of designing the foundational pages and layout for this website. Using Figma, I crafted the initial design, which was handed off to the system specialist, Ernestina Rodriguez, for the purpose of rectifying any issues</p>
-                    <a href='https://www.figma.com/file/IyEMWlNXsu9srmpMU50GXx/SJCOE-Admin?type=design&node-id=0-1&mode=design&t=XIacO1Wc56fcwiIo-0' className='figmaBtnTxt'>Figma</a>
+                    <p className='projectTitle'>Codewars Redo</p>
+                    <p className='projectInfo'>UI/UX PROJECT</p>
+                    <p className='SJCOEInfo'>The Codewars Redo project involved a sprint collaboration, where our team undertook the task of reimagining and reconstructing the 'Codewars' application according to our creative vision. Following the redesign, our proposed design was submitted for developer approval, with the intention of proceeding to develop the web application</p>
+                    <a href='https://www.figma.com/file/f5AidIAMRgpGsHVIEuHDCY/codewars-portfolio?type=design&mode=design&t=ZlEHnMQWOZsCXlVa-0' className='figmaBtnTxt'>Figma</a>
                 </div>
             </div>
         </div>

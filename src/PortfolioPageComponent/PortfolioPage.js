@@ -1,4 +1,4 @@
-import '../css/PortfolioPage.css'
+import '../PortfolioPageComponent/Portfolio.scss'
 import React from 'react'
 import Portfolio from '../Assets/port.png'
 import { Icon } from '@iconify/react';
@@ -36,16 +36,16 @@ export default function PortfolioPage() {
       <div class='row' className='navRow'>
         <button onClick={() => {
           setToHome(true);
-        }} className='navBtn'>Home</button>
+        }} className='portNavBtn'>Home</button>
         <button onClick={() => {
           setToAbout(true);
-        }} className='navBtn'>About</button>
+        }} className='portNavBtn'>About</button>
         <button onClick={() => {
           setToProjects(true);
-        }} className='projetBtn'>Project</button>
+        }} className='portNav'>Project</button>
         <button onClick={() => {
           setToSkill(true);
-        }} className='navBtn'>Skills</button>
+        }} className='portNavBtn'>Skills</button>
       </div>
       <div className='backBtnDiv'>
         <Icon className='arrow' icon="ph:arrow-left-light" width="22" />

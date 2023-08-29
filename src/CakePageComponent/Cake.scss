@@ -1,6 +1,35 @@
+// MAIN THING
+
 .CakeImg {
     margin-top: 60px;
 }
+
+//
+
+// CAKE NAV BAR
+
+.cakeNavBtn {
+    font-family: 'Bellota Text', cursive;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+.cakeNavBtn:hover {
+    text-decoration: underline 2px solid #CC0063;
+}
+
+.cakeNav {
+    font-family: 'Bellota Text', cursive;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+    text-decoration: underline 2px solid #CC0063;
+}
+
+//
+
+// FIGMA & WEB BTN
 
 .comingSoon {
     font-size: 15px;
@@ -19,6 +48,11 @@
     box-shadow: inset 100px 0 0 0 #f0cde1;
 }
 
+//
+
+
+// CAKE GROUP 
+
 .cakeRow {
     display: flex;
     flex-wrap: wrap;
@@ -27,3 +61,5 @@
     justify-content: center;
     margin-top: 110px;
 }
+
+//

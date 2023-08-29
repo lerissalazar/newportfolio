@@ -1,4 +1,4 @@
-import '../css/Cake.css'
+import '../CakePageComponent/Cake.scss'
 import React from 'react'
 import CakePic from '../Assets/cake Laptop.png'
 import { Icon } from '@iconify/react';
@@ -41,19 +41,16 @@ export default function Cake() {
             <div class='row' className='navRow'>
                 <button onClick={() => {
                     setToHome(true);
-                }} className='navBtn'>Home</button>
+                }} className='cakeNavBtn'>Home</button>
                 <button onClick={() => {
                     setToAbout(true);
-                }} className='navBtn'>About</button>
+                }} className='cakeNavBtn'>About</button>
                 <button onClick={() => {
                     setToProjects(true);
-                }} className='projetBtn'>Project</button>
+                }} className='cakeNav'>Project</button>
                 <button onClick={() => {
                     setToSkill(true);
-                }} className='navBtn'>Skills</button>
-                <button onClick={() => {
-                    setToPortfolio(true);
-                }} className='navBtn'>Portfolios</button>
+                }} className='cakeNavBtn'>Skills</button>
             </div>
             <div className='backBtnDiv'>
                 <Icon className='arrow' icon="ph:arrow-left-light" width="22" />

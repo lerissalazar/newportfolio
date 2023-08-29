@@ -1,15 +1,15 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import './App.css';
+import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import AboutPage from './pages/AboutPage';
-import StartPage from './pages/StartPage';
-import ProjectPage from './pages/ProjectPage';
-import SkillPage from './pages/SkillPage';
-import SJCOE from './pages/SJCOE';
-import Remember from './pages/Remember';
-import Cake from './pages/Cake';
-import Code from './pages/Code';
-import PortfolioPage from './pages/PortfolioPage';
+import AboutPage from './AboutPageComponent/AboutPage';
+import StartPage from './StarterPageComponent/StartPage';
+import ProjectPage from './ProjectsPageComponent/ProjectPage';
+import SkillPage from './SkillsPageComponent/SkillPage';
+import SJCOE from './SJCOEPageComponent/SJCOE';
+import Remember from './RememberPageComponent/Remember';
+import Cake from './CakePageComponent/Cake';
+import Code from './CodePageComponent/Code';
+import PortfolioPage from './PortfolioPageComponent/PortfolioPage';
 
 
 function App() {

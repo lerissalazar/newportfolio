@@ -1,4 +1,4 @@
-import '../css/HomePage.css'
+import '../StarterPageComponent/Start.scss'
 import React from 'react'
 import Headshot from '../Assets/5FB7A5C3-C5BA-4DCB-85E0-44A82AAA3A66.png'
 import { Navigate } from 'react-router-dom';
@@ -22,7 +22,7 @@ export default function StartPage() {
 
     return (
         <div class='container fluid' className='homeContainer'>
-            <div class='row' className='divRow' >
+            <div class='row' className='starterDivRow' >
                 <div>
                     <p className='welcomeTxt'>
                         <span class="title-word title-word-1">Welcome </span>
@@ -34,22 +34,22 @@ export default function StartPage() {
                         <div className='sideNavDiv'>
                             <button onClick={() => {
                                 setToAbout(true);
-                            }} className='sideLink'>About</button>
+                            }} className='aboutSideLink'>About</button>
                         </div>
                         <div className='sideNavDiv'>
                             <button onClick={() => {
                                 setToProjects(true);
-                            }} className='sideLink'>Projects</button>
+                            }} className='projectSideLink'>Projects</button>
                         </div>
                         <div className='sideNavDiv'>
                             <button onClick={() => {
                                 setToSkill(true);
-                            }} className='sideLink'>Skills</button>
+                            }} className='skillSideLink'>Skills</button>
                         </div>
                     </div>
                 </div>
-                <div className='headshotDiv'>
-                    <img className='headshot' src={Headshot} />
+                <div className='starterEmojiDiv'>
+                    <img className='starterEmoji' src={Headshot} />
                 </div>
 
             </div >

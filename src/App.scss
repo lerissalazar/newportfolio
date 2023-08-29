@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text&display=swap');
+/* font-family: 'Bellota Text', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text&family=DM+Serif+Display&display=swap');
+/* font-family: 'DM Serif Display', serif; */
+
+body {
+    background-color: #EDEDE9 !important;
+}
+
+.navRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.homeNavBtn {
+    font-family: 'Bellota Text', cursive;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+.homeNavBtn:hover {
+    text-decoration: underline 2px solid #CC0063;
+}
+
+.aboutNavBtn {
+    font-family: 'Bellota Text', cursive;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+.aboutNavBtn:hover {
+    text-decoration: underline 2px solid #CC0063;
+}
+
+.projectNavBtn {
+    font-family: 'Bellota Text', cursive;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+.projectNavBtn:hover {
+    text-decoration: underline 2px solid #CC0063;
+}
+
+.skillNavBtn {
+    font-family: 'Bellota Text', cursive;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+.skillNavBtn:hover {
+    text-decoration: underline 2px solid #CC0063;
+}
