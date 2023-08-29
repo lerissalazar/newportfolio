@@ -33,7 +33,7 @@ export default function Cake() {
     }
 
     if (goToPortfolio) {
-        return <Navigate to= '/PortfolioPage' />
+        return <Navigate to='/PortfolioPage' />
     }
 
     return (
@@ -55,23 +55,23 @@ export default function Cake() {
                     setToPortfolio(true);
                 }} className='navBtn'>Portfolios</button>
             </div>
-            <button onClick={() => {
-                setToBack(true);
-            }}
-             className='backBtn'><Icon className='arrow' icon="ph:arrow-left-light" width="22" />Back To Projects</button>
-            <div class='row' className='SJCOERow'>
+            <div className='backBtnDiv'>
+                <Icon className='arrow' icon="ph:arrow-left-light" width="22" />
+                <button onClick={() => {
+                    setToBack(true);
+                }}
+                    className='backBtn'>Back To Projects</button>
+            </div>
+            <div class='row' className='cakeRow'>
                 <div className='CakeImg'>
                     <img src={CakePic} />
                 </div>
                 <div>
                     <span className='line'>
-                        <p className='projectTitle'>Remember When</p>
-                        <p className='projectInfo'>UI/UX PROJECT &  WEB APP</p>
+                        <p className='projectTitle'>Simply Caked</p>
+                        <p className='projectInfo'>UI/UX PROJECT &  WEB APP <span className='comingSoon'>&lt; coming soon /&gt;</span> </p>
                         <p className='SJCOEInfo'>"Simply Caked" is a passion project of mine, driven by my desire to create a dedicated website for my custom cake business. This upcoming platform will feature a gallery showcasing my different types of cake orders, pricing details, contact information, and a detailed guide on the process of ordering personalized cakes. I took charge of designing the website's layout, and I'm currently in the process of actively developing it to bring my vision to life in the near future.</p>
-                        <button className='figmaBtn'>
-                            <a href='https://www.figma.com/file/IyEMWlNXsu9srmpMU50GXx/SJCOE-Admin?type=design&node-id=0-1&mode=design&t=XIacO1Wc56fcwiIo-0' className='figmaBtnTxt'>Figma</a>
-                        </button>
-
+                        <a href='https://www.figma.com/file/x5mRWztR09Png5aF4KhEyu/cake-buisness-portfolio?type=design&node-id=0-1&mode=design&t=ZlEHnMQWOZsCXlVa-0' className='figmaBtnTxt'>Figma</a>
                     </span>
                 </div>
             </div>

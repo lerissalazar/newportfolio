@@ -1,3 +1,29 @@
 .CakeImg {
-    margin-top: 35px;
+    margin-top: 60px;
+}
+
+.comingSoon {
+    font-size: 15px;
+    font-family: 'Bellota Text', cursive;
+}
+
+.figmaBtnTxt {
+    font-size: 20px;
+    color: black;
+    font-family: 'Bellota Text', cursive;
+    text-decoration: underline solid 2px #CC0063;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.figmaBtnTxt:hover {
+    box-shadow: inset 100px 0 0 0 #f0cde1;
+}
+
+.cakeRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 150px;
+    display: flex;
+    justify-content: center;
+    margin-top: 110px;
 }

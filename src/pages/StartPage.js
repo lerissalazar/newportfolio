@@ -6,6 +6,7 @@ import { Navigate } from 'react-router-dom';
 export default function StartPage() {
     const [goToAbout, setToAbout] = React.useState(false);
     const [goToProjects, setToProjects] = React.useState(false);
+    const [goToSkill, setToSkill] = React.useState(false);
 
     if (goToAbout) {
         return <Navigate to='/aboutPage' />
@@ -13,6 +14,10 @@ export default function StartPage() {
 
     if (goToProjects) {
         return <Navigate to='/projectPage' />
+    }
+
+    if (goToSkill) {
+        return <Navigate to='/skillPage' />
     }
 
     return (
@@ -38,7 +43,7 @@ export default function StartPage() {
                         </div>
                         <div className='sideNavDiv'>
                             <button onClick={() => {
-                                setToAbout(true);
+                                setToSkill(true);
                             }} className='sideLink'>Skills</button>
                         </div>
                     </div>

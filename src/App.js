@@ -9,6 +9,7 @@ import SJCOE from './pages/SJCOE';
 import Remember from './pages/Remember';
 import Cake from './pages/Cake';
 import Code from './pages/Code';
+import PortfolioPage from './pages/PortfolioPage';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
             <Route path='/RememberPage' element={<Remember />} />
             <Route path='/CakePage' element={<Cake />} />
             <Route path='/CodePage' element={<Code />} />
+            <Route path='/PortPage' element={<PortfolioPage />} />
           </Routes>
         </Router>
     </div>

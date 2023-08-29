@@ -52,9 +52,18 @@ export default function AboutPage() {
                             Beyond my technical skills, I also run two small businesses. I make <span className='diffColor'>custom cakes</span>  that bring joy to celebrations & I create <span className='diffColor'>unique and stylish custom shoes</span>  that make a statement. These businesses not only allow me to showcase my creativity but also enable me to connect with people on a personal level.</p>
                         <p className='contactTxt'>Contact</p>
                         <span className='contactLine'>
-                            <a href='mailto:lerissalazarjob@gmail.com' className='contactItem'><Icon className='emailIcon' icon="mdi-light:email" width="35" height="35" />lerissalazarjob@gmail.com</a>
-                            <a href='https://www.linkedin.com/in/lerissalazar12/' className='linkedItem'><Icon className='linkedIcon' icon="ph:linkedin-logo-thin" width="35" height="35" />LinkedIn</a>
-                            <a href='https://github.com/lerissalazar' className='gitItem'><Icon className='gitIcon' icon="ph:github-logo-thin" width="35" height="35" />Github</a>
+                            <div className='mobileIcon'>
+                                <Icon className='emailIcon' icon="mdi-light:email" width="35" height="35" />
+                                <a href='mailto:lerissalazarjob@gmail.com' className='contactItem'>lerissalazarjob@gmail.com</a>
+                            </div>
+                            <div className='mobileIcon'>
+                                <Icon className='linkedIcon' icon="ph:linkedin-logo-thin" width="35" height="35" />
+                                <a href='https://www.linkedin.com/in/lerissalazar12/' className='linkedItem'>LinkedIn</a>
+                            </div>
+                            <div className='mobileIcon'>
+                                <Icon className='gitIcon' icon="ph:github-logo-thin" width="35" height="35" />
+                                <a href='https://github.com/lerissalazar' className='gitItem'>Github</a>
+                            </div>
                         </span>
                     </div>
                     <div>

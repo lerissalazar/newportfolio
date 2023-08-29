@@ -5,3 +5,108 @@
     font-size: 20px;
     background-color: transparent;
 }
+
+.skillFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    gap: 100px;
+}
+
+.langDiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    font-family: 'DM Serif Display', serif;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.skillTxt {
+    font-family: 'Bellota Text', cursive;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.smartIcon {
+    width: 200px;
+    height: 200px;
+}
+
+.smartIconDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    animation: color-animation 3s linear infinite;
+}
+
+.icon-1 {
+    --color-1: #cc0063;
+    --color-2: #ff679b;
+    --color-3: #910048;
+}
+
+.icon-2 {
+    --color-1: #ff4c6b;
+    --color-2: #6c1d45;
+    --color-3: #ff5cab;
+}
+
+.icon-3 {
+    --color-1: #6c1d45;
+    --color-2: #910048;
+    --color-3: #cc0063;
+}
+
+.icon-4 {
+    --color-1: #ff679b;
+    --color-2: #910048;
+    --color-3: #cc0063;
+}
+
+.icon-5 {
+    --color-1: #6c1d45;
+    --color-2: #ff679b;
+    --color-3: #ff4c6b;
+}
+
+@keyframes color-animation {
+    0% {
+        color: var(--color-1)
+    }
+
+    32% {
+        color: var(--color-1)
+    }
+
+    33% {
+        color: var(--color-2)
+    }
+
+    65% {
+        color: var(--color-2)
+    }
+
+    66% {
+        color: var(--color-3)
+    }
+
+    99% {
+        color: var(--color-3)
+    }
+
+    100% {
+        color: var(--color-1)
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .skillFlex {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+}

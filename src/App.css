@@ -27,13 +27,4 @@ body {
   text-decoration: underline 2px solid #CC0063;
 }
 
-.gitBtn {
-  font-family: 'Bellota Text', cursive;
-  border: none;
-  background-color: #E3D5CA;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  width: 90px;
-  height: 40px;
-  font-size: 20px;
-}
 

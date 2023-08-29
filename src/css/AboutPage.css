@@ -101,12 +101,6 @@
     padding-bottom: 5px;
 }
 
-@media screen and (max-width: 1100px) {
-    .aboutRow {
-        gap: 60px;
-    }
-}
-
 .abtBtn {
     font-family: 'Bellota Text', cursive;
     border: none;
@@ -121,4 +115,87 @@
     height: 100px;
 }
 
+@media screen and (max-width: 768px) {
+    .helloTxt {
+        font-size: 30px;
+    }
 
+    .helloInfo {
+        font-size: 18px;
+        width: 400px;
+    }
+
+    .aboutRow {
+        gap: 20px;
+    }
+
+    .headshot2 {
+        width: 200px;
+        height: 200px;
+    }
+
+    .contactTxt {
+        font-size: 30px;
+    }
+
+    .gitItem {
+        font-size: 18px;
+    }
+
+    .linkedItem {
+        font-size: 18px;
+    }
+
+    .contactItem {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .headshot2 {
+       margin-top: 0 !important;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .helloTxt {
+        font-size: 20px;
+        margin-left: 20px
+    }
+
+    .helloInfo {
+        font-size: 15px;
+        width: 350px;
+        margin-left: 20px
+    }
+
+    .aboutRow {
+        gap: 0;
+    }
+
+    .headshot2 {
+        width: 150px;
+        height: 150px;
+    }
+
+    .contactTxt {
+        font-size: 20px;
+        margin-left: 20px
+    }
+
+    .gitItem {
+        font-size: 15px;
+    }
+
+    .linkedItem {
+        font-size: 15px;
+    }
+
+    .contactItem {
+        font-size: 15px;
+    }
+
+    .mobileIcon {
+        margin-left: 20px;
+    }
+}

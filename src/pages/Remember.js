@@ -50,24 +50,23 @@ export default function Remember() {
                     }} className='navBtn'>Skills</button>
                 </div>
             </div >
-            <button onClick={() => {
-                setToBack(true);
-            }}
-                className='backBtn'><Icon className='arrow' icon="ph:arrow-left-light" width="22" />Back To Projects</button>
+            <div className='backBtnDiv'>
+                <Icon className='arrow' icon="ph:arrow-left-light" width="22" />
+                <button onClick={() => {
+                    setToBack(true);
+                }}
+                    className='backBtn'>Back To Projects</button>
+            </div>
             <div class='row' className='RememberRow'>
                 <div className='RememberImg'>
                     <img src={RememberWhen} />
                 </div>
                 <div>
-                        <p className='projectTitle'>Remember When</p>
-                        <p className='projectInfo'>UI/UX PROJECT &  WEB APP</p>
-                        <p className='SJCOEInfo'>"Remember When" is an application designed to preserve your cherished memories within a personalized album. These memories include a variety of images, captions, dates and hashtags, with plans to expand its features further. The application's standout feature involves the spontaneous appearance of these cherished memories on your dashboard, serving as delightful reminders of momentous occasions. I had he task of the app's layout, design, and logo, and played a pivotal role in enhancing its functionality by ensuring responsiveness and resolving minor issues.</p>
-                        <button className='figmaBtn'>
-                            <a href='https://www.figma.com/file/IyEMWlNXsu9srmpMU50GXx/SJCOE-Admin?type=design&node-id=0-1&mode=design&t=XIacO1Wc56fcwiIo-0' className='figmaBtnTxt'>Figma</a>
-                        </button>
-                        <button className='webBtn'>
-                            <a href='#' type='button' className='webBtnTxt' >Web App</a>
-                        </button>
+                    <p className='projectTitle'>Remember When</p>
+                    <p className='projectInfo'>UI/UX PROJECT &  WEB APP <span className='comingSoon'>&lt; link coming soon /&gt;</span> </p>
+                    <p className='SJCOEInfo'>"Remember When" is an application designed to preserve your cherished memories within a personalized album. These memories include a variety of images, captions, dates and hashtags, with plans to expand its features further. The application's standout feature involves the spontaneous appearance of these cherished memories on your dashboard, serving as delightful reminders of momentous occasions. I had he task of the app's layout, design, and logo, and played a pivotal role in enhancing its functionality by ensuring responsiveness and resolving minor issues.</p>
+                    <a href='https://www.figma.com/file/TsDReSJrAoCbIloNzrVa69/remember-when?type=design&node-id=0-1&mode=design&t=YIzqwrURZEWLhnDU-0' className='figmaBtnTxt'>Figma</a>
+                    {/* <a href='#' type='button' className='webBtnTxt' >Web App</a> */}
                 </div>
             </div>
         </div>

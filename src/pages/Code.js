@@ -47,10 +47,13 @@ export default function Code() {
                     setToSkill(true);
                 }} className='navBtn'>Skills</button>
             </div>
-            <button onClick={() => {
-                setToBack(true);
-            }}
-                className='backBtn'><Icon className='arrow' icon="ph:arrow-left-light" width="22" />Back To Projects</button>
+            <div className='backBtnDiv'>
+                <Icon className='arrow' icon="ph:arrow-left-light" width="22" />
+                <button onClick={() => {
+                    setToBack(true);
+                }}
+                    className='backBtn'>Back To Projects</button>
+            </div>
             <div class='row' className='SJCOERow'>
                 <div className='CodeImg'>
                     <img src={CodePic} />
@@ -59,9 +62,7 @@ export default function Code() {
                     <p className='projectTitle'>Codewars Redo</p>
                     <p className='projectInfo'>UI/UX PROJECT</p>
                     <p className='SJCOEInfo'>The Codewars Redo project involved a sprint collaboration, where our team undertook the task of reimagining and reconstructing the 'Codewars' application according to our creative vision. Following the redesign, our proposed design was submitted for developer approval, with the intention of proceeding to develop the web application</p>
-                    <button className='figmaBtn'>
-                        <a href='https://www.figma.com/file/IyEMWlNXsu9srmpMU50GXx/SJCOE-Admin?type=design&node-id=0-1&mode=design&t=XIacO1Wc56fcwiIo-0' className='figmaBtnTxt'>Figma</a>
-                    </button>
+                    <a href='https://www.figma.com/file/f5AidIAMRgpGsHVIEuHDCY/codewars-portfolio?type=design&mode=design&t=ZlEHnMQWOZsCXlVa-0' className='figmaBtnTxt'>Figma</a>
                 </div>
             </div>
         </div>
