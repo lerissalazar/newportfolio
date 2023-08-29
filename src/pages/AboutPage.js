@@ -3,7 +3,6 @@ import React from 'react'
 import { Icon } from '@iconify/react';
 import { Navigate } from 'react-router-dom';
 import Headshot2 from '../Assets/AC3549C2-4C94-4AE3-BFC0-23BA21D134E1.png'
-import { Color } from 'three';
 
 export default function AboutPage() {
     const [goToHome, setToHome] = React.useState(false);
