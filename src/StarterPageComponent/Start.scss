@@ -160,6 +160,12 @@
 
 //
 
+@media screen and (max-width: 320px) {
+    .starterDivRow {
+        margin-top: -10px !important;
+    }
+}
+
 // TABLET 768PX
 
 @media screen and (max-width: 768px) {
